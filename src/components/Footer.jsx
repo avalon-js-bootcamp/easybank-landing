@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import RequestInviteButton from "./invite-button";
 
 {
   /* function SocialMediaIcon() {
@@ -39,6 +40,7 @@ function Footer() {
             </div>
           ))}
         </div>
+        <RequestInviteButton></RequestInviteButton>
       </div>
     </>
   );

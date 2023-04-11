@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 function IndividualArticles({ author, title, text }) {
   return (
     <>
