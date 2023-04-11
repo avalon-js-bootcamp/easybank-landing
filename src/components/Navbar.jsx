@@ -5,7 +5,7 @@ function Navbar() {
   const navItems = ["Home", "About", "Contact", "Blog", "Careers"];
 
   return (
-    <>
+    <div className="nav-container">
       <img src="../images/logo.svg" />
       <div className="nav-bar">
         {navItems.map((item) => (
@@ -15,7 +15,7 @@ function Navbar() {
         ))}
       </div>
       <RequestInviteButton></RequestInviteButton>
-    </>
+    </div>
   );
 }
 
