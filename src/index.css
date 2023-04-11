@@ -10,12 +10,37 @@
     font-weight: 300;
 }
 
+.benefits-section{
+    background-color: hsl(220, 16%, 96%);
+}
+
+.benefits-container{
+    display: flex;
+}
+
+.benefits{
+    margin: 10px;
+    padding: 10px;
+}
+
+.benefits-heading{
+    color: hsl(233, 26%, 24%)
+}
+
+.benefits-text{
+    color: hsl(233, 8%, 62%)
+}
+
+.article-section{
+background-color: hsl(0, 0%, 98%)
+}
+
 .article-container{
     display: flex;
 }
 
 .article{
-    background-color: red;
+    background-color: hsl(0, 0%, 100%);
     margin: 10px;
     padding: 10px;
 }

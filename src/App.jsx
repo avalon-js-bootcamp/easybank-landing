@@ -1,13 +1,14 @@
 import { useState } from "react";
-import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Benefits from "./components/Benefits";
 import LatestArticles from "./components/Articles";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar></Navbar>
+      <Benefits></Benefits>
       <LatestArticles></LatestArticles>
       <Footer></Footer>
     </>

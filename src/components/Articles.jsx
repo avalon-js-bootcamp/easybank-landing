@@ -13,7 +13,7 @@ function IndividualArticles({ author, title, text }) {
 
 function LatestArticles() {
   return (
-    <>
+    <div className="article-section">
       <h1>Latest Articles</h1>
       <img src={"../images/image-currency.jpg"}></img>
       <div className="article-container">
@@ -46,7 +46,7 @@ function LatestArticles() {
           text="After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite through the site..."
         />
       </div>
-    </>
+    </div>
   );
 }
 
