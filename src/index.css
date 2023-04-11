@@ -1,0 +1,43 @@
+.nav-items{
+    color: red;
+    font-size: 12px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 300;
+}
+
+.article-container{
+    display: flex;
+}
+
+.article{
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.article-author{
+    color: hsl(233, 8%, 62%)
+}
+
+.article-title{
+    color: hsl(233, 26%, 24%)
+}
+
+.article-text{
+    color: hsl(233, 8%, 62%)
+}
+
+.footer-bar{
+    background-color: hsl(233, 26%, 24%)
+}
+
+.footer-items{
+    color: hsl(0, 0%, 98%);
+    font-size: 12px;
+    font-weight: 300;
+}
