@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <div className="nav-container">
-      <img src="../images/logo.svg" />
+      <img src="../images/logo.svg" height="25" />
       <div className="nav-bar">
         {navItems.map((item) => (
           <div key={item} className="nav-items">

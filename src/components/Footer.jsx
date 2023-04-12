@@ -28,21 +28,39 @@ function Footer() {
     "Privacy Policy",
   ];
 
+  const socialMediaIcons = [
+    "../images/icon-facebook.svg",
+    "../images/icon-youtube.svg",
+    "../images/icon-twitter.svg",
+    "../images/icon-pinterest.svg",
+    "../images/icon-instagram.svg",
+  ];
+
   return (
-    <>
-      <div className="footer-bar">
+    <div className="footer-bar">
+      <div className="footer-left">
         <img src={"../images/logo.svg"}></img>
-        {/*<SocialMediaIcon></SocialMediaIcon>*/}
         <div>
-          {footerItems.map((item) => (
-            <div key={item} className="footer-items">
-              {item}
-            </div>
+          {socialMediaIcons.map((icon) => (
+            <img src={icon} key={icon} className="footer-socials"></img>
           ))}
         </div>
-        <RequestInviteButton></RequestInviteButton>
       </div>
-    </>
+      <div className="footer-middle">
+        {footerItems.map((item) => (
+          <div key={item} className="footer-items">
+            {item}
+          </div>
+        ))}
+      </div>
+      <div className="footer-right">
+        <RequestInviteButton></RequestInviteButton>
+        <div className="footer-copyright">
+          {" "}
+          &copy; Easybank. All rights reserved
+        </div>
+      </div>
+    </div>
   );
 }
 
