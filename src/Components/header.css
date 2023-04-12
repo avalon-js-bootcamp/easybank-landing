@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  padding: 0 10% 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 5% 20px;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .top-navigation {
+    display: none;
+    top: 20%;
+  }
+
+  .close {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-buttons {
+    display: none;
+  }
+}
+
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}

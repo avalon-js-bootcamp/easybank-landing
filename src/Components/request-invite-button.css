@@ -1,0 +1,18 @@
+.invite-button {
+  height: 50px;
+  width: 170px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-image: linear-gradient(to right, #31d165, #2dbad7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+  cursor: pointer;
+}
+
+.invite-button:hover {
+  opacity: 0.7;
+}
