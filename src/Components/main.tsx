@@ -1,5 +1,6 @@
 import "./main.css";
 import BackgroundArt from "/images/bg-intro-desktop.svg";
+import BackgroundArtMobile from "/images/bg-intro-mobile.svg"
 import PhoneImg from "/images/image-mockups.png";
 import RequestInvite from "./request-invite-button";
 
@@ -18,8 +19,11 @@ export default function main() {
         </div>
       </div>
       <div className="right-column">
-        <div className="overlapping-image">
-          <img src={BackgroundArt} alt="Phone art" />
+        <div className="background-image-desktop">
+          <img src={BackgroundArt} alt="background desktop" />
+        </div>
+        <div className="background-image-mobile">
+        <img src={BackgroundArtMobile} alt="bavkground mobile" />
         </div>
         <div className="overlapping-phone-image">
           <img src={PhoneImg} alt="phone mockup" />

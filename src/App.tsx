@@ -9,6 +9,7 @@ import Footer from './Components/footer'
 function App() {
   return (
     <div className="App">
+      <div className="hide-everything"></div>
 <Header></Header>
 <Main></Main>
 <Sales></Sales>

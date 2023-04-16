@@ -26,6 +26,24 @@
   background-color: transparent;
 }
 
+.hide-everything {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .hide-everything {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    width: 95vw;
+    height: 100vh;
+  }
+
+  .dark {
+    display: block;
+  }
+}
 @media screen and (max-width: 767px) {
   *::-webkit-scrollbar {
     display: none;

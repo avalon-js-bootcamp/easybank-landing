@@ -7,10 +7,12 @@ export default function header() {
     let activeButton = document.querySelector(".hamburger") as HTMLElement;
     let deactivateButton = document.querySelector(".close") as HTMLElement;
     let navigation = document.querySelector(".top-navigation") as HTMLElement;
+    let background = document.querySelector(".hide-everything") as HTMLElement
 
     navigation.classList.toggle("active");
     activeButton.classList.toggle("hidden");
     deactivateButton.classList.toggle("hidden");
+    background.classList.toggle("dark")
   }
 
   return (

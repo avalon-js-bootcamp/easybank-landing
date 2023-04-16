@@ -35,7 +35,7 @@
   transition: 0.3s linear;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .top-navigation {
     display: flex;
     flex-direction: column;

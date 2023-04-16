@@ -1,7 +1,7 @@
 .main-section {
   display: flex;
   flex-direction: row;
-  max-width: 100vw;
+  max-width: 95vw;
   background-color: white;
   margin-bottom: -100px;
   padding: 0 10%;
@@ -36,21 +36,20 @@
 .right-column {
   width: 60%;
   overflow: hidden;
+  position: relative;
 }
 
-.overlapping-image {
+.background-image-desktop {
   width: 100px;
   height: 600px;
 }
 
-.overlapping-image img {
+.background-image-desktop img {
   display: block;
   margin: auto;
   position: relative;
-}
-
-.overlapping-image {
-  height: 600px;
+  top: -35%;
+  left: 0%;
 }
 
 .overlapping-phone-image {
@@ -61,11 +60,16 @@
   left: 20%;
 }
 
+.background-image-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .main-section {
     flex-direction: column-reverse;
     margin-bottom: 0;
     padding-bottom: 40px;
+    gap: 30px;
   }
 
   .left-column {
@@ -84,29 +88,43 @@
 
   .right-column {
     width: 100%;
-    max-height: 420px;
-  }
-
-  .overlapping-image img {
-    transform: translate(-25%, -55%);
-  }
-
-  .overlapping-image {
-    height: 0;
-  }
-
-  .overlapping-phone-image img {
     max-height: 500px;
     position: relative;
-    transform: translate(-25%, -15%);
+  }
+
+  .background-image-desktop {
+    display: none;
+  }
+
+  .background-image-mobile {
+    display: block;
+    width: 100px;
+    height: 600px;
+  }
+
+  .background-image-mobile img {
+    margin: auto;
+    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 120%;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
   }
 
   .overlapping-phone-image {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlapping-phone-image img {
+    display: block;
+    max-width: 85vw;
+    height: auto;
   }
 }
 
