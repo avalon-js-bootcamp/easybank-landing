@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95vw;
+  padding: 20px 10%;
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    padding: 30px 5%;
+    z-index: 100;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .top-navigation {
+    display: none;
+    top: 300px;
+  }
+
+  .close {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-buttons {
+    display: none;
+  }
+}
+
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
