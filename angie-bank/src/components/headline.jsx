@@ -15,6 +15,7 @@ export default function HeadLine() {
       </div>
       <div className="image-box">
         <img className="background-img" src={svgBG} />
+
         <img className="mockup-img" src={mockup} />
       </div>
     </div>

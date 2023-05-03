@@ -1,12 +1,14 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin-bottom: -130px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 0;
   }
 }
 
@@ -16,7 +18,7 @@
   width: 80%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .head-line-box {
     display: flex;
     flex-direction: column;
@@ -33,7 +35,7 @@ h {
   color: #031d44;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   h {
     font-size: 55px;
   }
@@ -69,7 +71,7 @@ p {
   height: 700px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .image-box {
     height: 500px;
   }
@@ -84,28 +86,27 @@ p {
   width: 1900px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .background-img {
     width: 1000px;
     height: 700px;
-    left: -30%;
-    top: -40%;
+    left: -10%;
   }
 }
 
 .mockup-img {
   position: relative;
-  top: -195%;
+  top: -225%;
   right: -40%;
   height: 1000px;
   width: 800px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .mockup-img {
     height: 600px;
     width: 450px;
     top: -175%;
-    right: -2%;
+    transform: translate(-40%, 0);
   }
 }
